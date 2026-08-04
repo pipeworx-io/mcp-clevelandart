@@ -1,17 +1,19 @@
-# mcp-clevelandart
+# @pipeworx/clevelandart
 
-Cleveland Museum of Art Open Access MCP.
+Cleveland Museum of Art Open Access API MCP — search/lookup ~63 000 artworks, including high-res CC0 images. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | Search artworks. Optional filters: type, artist, has_image, cc0. |
-| `get_artwork` | Single artwork by accession number (e.g. "1962.158") or numeric id. |
-| `creators` | Search creators (artists) by name. |
-| `exhibitions` | Search exhibitions by title/keyword. |
+- `search(query?, filters?)` — search artworks with optional filters (artist, type, has_image, cc0)
+- `get_artwork(id)` — full artwork record by accession number or numeric id
+- `creators(query?, limit?)` — search creators (artists)
+- `exhibitions(query?, limit?)` — search exhibitions
+
+## Data source
+
+`https://openaccess-api.clevelandart.org/api/`
 
 ## Quick Start
 
@@ -27,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
