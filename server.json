@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/clevelandart",
   "title": "Clevelandart",
-  "description": "Cleveland Museum of Art Open Access API (~63k artworks, many CC0)",
-  "version": "0.1.0",
+  "description": "Cleveland Museum of Art Open Access MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/clevelandart",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-clevelandart",

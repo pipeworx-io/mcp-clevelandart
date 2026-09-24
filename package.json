@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-clevelandart",
-  "version": "0.1.0",
-  "description": "Cleveland Museum of Art Open Access API (~63k artworks, many CC0)",
+  "version": "0.1.1",
+  "description": "Cleveland Museum of Art Open Access MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-clevelandart": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "clevelandart"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-clevelandart"
+    "url": "git+https://github.com/pipeworx-io/mcp-clevelandart.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-3be9561054171a9f789cddbe12001dd6c121ffc31a815bc0fb7724a98ae27a2b",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
