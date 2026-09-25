@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/clevelandart",
   "title": "Clevelandart",
   "description": "Cleveland Museum of Art Open Access MCP.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/clevelandart",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-clevelandart",

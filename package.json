@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-clevelandart",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cleveland Museum of Art Open Access MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3be9561054171a9f789cddbe12001dd6c121ffc31a815bc0fb7724a98ae27a2b",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-407ddab4926311131b8f8e25defa1f2626839c2b1610ae8d34feb8dca820c3ea",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
