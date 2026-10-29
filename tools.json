@@ -1,0 +1,86 @@
+[
+  {
+    "name": "search",
+    "description": "Search artworks. Optional filters: type, artist, has_image, cc0.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text search across title/description/artist."
+        },
+        "type": {
+          "type": "string",
+          "description": "e.g. \"Painting\", \"Sculpture\", \"Drawing\""
+        },
+        "artist": {
+          "type": "string"
+        },
+        "has_image": {
+          "type": "boolean",
+          "description": "Restrict to artworks with a web image."
+        },
+        "cc0": {
+          "type": "boolean",
+          "description": "Restrict to CC0-licensed images."
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-1000 (default 25)"
+        },
+        "skip": {
+          "type": "number",
+          "description": "Offset (default 0)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_artwork",
+    "description": "Single artwork by accession number (e.g. \"1962.158\") or numeric id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "e.g. \"1962.158\" or \"94979\""
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "creators",
+    "description": "Cleveland Museum of Art Open Access API — search the museum's creator records, the artists and makers behind works in the CMA collection, by name. Returns each creator's CMA id, name, role, biographical dates and nationality. Answers which artists in the Cleveland Museum of Art collection match a name, and what their CMA id is.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-1000 (default 25)"
+        }
+      }
+    }
+  },
+  {
+    "name": "exhibitions",
+    "description": "Cleveland Museum of Art Open Access API — search the museum's exhibition history by title keyword. Returns each exhibition's CMA id, title, opening and closing dates and venue, covering shows mounted at and organized by the museum. Answers whether the Cleveland Museum of Art has shown an exhibition on a subject, and when it ran.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-1000 (default 25)"
+        }
+      }
+    }
+  }
+]
